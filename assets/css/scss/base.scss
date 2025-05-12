@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+
+@import './reset';
+
+$black: #333333;
+$black-a75: rgba(51, 51, 51, .75);
+$black-a5: rgba(51, 51, 51, .5);
+$black-a25: rgba(51, 51, 51, .25);
+$white: #FFFFFF;
+$white-a75: rgba(255, 255, 255, .75);
+$white-a5: rgba(255, 255, 255, .5);
+$white-a25: rgba(255, 255, 255, .25);
+$brown: #4A3B31;
+$grey: #E6E6E6;
+
+$font1: "fot-tsukuaoldmin-pr6n", sans-serif;
+$font2: "Zen Old Mincho", serif;
+
+* {
+    font-family: $font2;
+    font-size: 14px;
+    font-weight: 400;
+    color: $brown;
+    letter-spacing: .1em;
+    line-height: 165%;
+}
+
+html, body {
+    width: 100vw;
+}
+
+.acurry-fv, main, section {
+    width: 100%;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+@mixin bg {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

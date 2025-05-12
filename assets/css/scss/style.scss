@@ -1,0 +1,94 @@
+@import './base';
+
+html {
+
+    body {
+        
+        .acurry-fv {
+            height: 100vw;
+            position: relative;
+
+            img {
+                height: 100%;
+                @include absolute;
+            }
+
+            h1 {
+                font-family: $font1;
+                font-size: 42px;
+                color: $white;
+                line-height: 125%;
+                position: absolute;
+                bottom: 3.5vw;
+                left: 5vw;
+
+                span {
+                    display: block;
+                    width: fit-content;
+                    padding: 5px 12.5px;
+                    margin-bottom: 7.5px;
+                    font-size: 14px;
+                    line-height: 100%;
+                    position: relative;
+                    z-index: 1;
+
+                    img {
+                        height: 100%;
+                        @include absolute;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+
+        main.acurry_main {
+            background-image: url(../img/bg1.webp);
+            padding-top: 50px;
+
+            .acurry-epilogue {
+
+                p {
+                    width: fit-content;
+                    padding: 35px 25px 30px 25px;
+                    margin: 0 auto;
+                    text-align: center;
+                    position: relative;
+                    z-index: 1;
+
+                    img {
+                        width: 90vw;
+                        height: fit-content;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: -1;
+                    }    
+
+                    span {
+                        position: relative;
+                        left: 7px;
+                    }
+
+                    &::before {
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        background-color: $white-a75;
+                        @include absolute;
+                    }
+
+                    &::after {
+                        content: '';
+                        width: calc(100% - 25px);
+                        height: calc(100% - 25px);
+                        border: solid 1px $brown;
+                        position: absolute;
+                        top: 12.5px;
+                        left: 12.5px;
+                    }
+                }
+            }
+        }
+    }
+}

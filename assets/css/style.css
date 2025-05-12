@@ -1,0 +1,185 @@
+/* --- reset --- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4A3B31;
+  letter-spacing: 0.1em;
+  line-height: 165%;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.acurry-fv, main, section {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+html body .acurry-fv {
+  height: 100vw;
+  position: relative;
+}
+html body .acurry-fv img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html body .acurry-fv h1 {
+  font-family: "fot-tsukuaoldmin-pr6n", sans-serif;
+  font-size: 42px;
+  color: #FFFFFF;
+  line-height: 125%;
+  position: absolute;
+  bottom: 3.5vw;
+  left: 5vw;
+}
+html body .acurry-fv h1 span {
+  display: block;
+  width: fit-content;
+  padding: 5px 12.5px;
+  margin-bottom: 7.5px;
+  font-size: 14px;
+  line-height: 100%;
+  position: relative;
+  z-index: 1;
+}
+html body .acurry-fv h1 span img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+html body main.acurry_main {
+  background-image: url(../img/bg1.webp);
+  padding-top: 50px;
+}
+html body main.acurry_main .acurry-epilogue p {
+  width: fit-content;
+  padding: 35px 25px 30px 25px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+html body main.acurry_main .acurry-epilogue p img {
+  width: 90vw;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+html body main.acurry_main .acurry-epilogue p span {
+  position: relative;
+  left: 7px;
+}
+html body main.acurry_main .acurry-epilogue p::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html body main.acurry_main .acurry-epilogue p::after {
+  content: "";
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+  border: solid 1px #4A3B31;
+  position: absolute;
+  top: 12.5px;
+  left: 12.5px;
+}
