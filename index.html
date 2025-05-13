@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>｜北野エースWEB SHOP</title>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
         <script>
             (function(d) {
                 var config = {
@@ -14,7 +15,7 @@
                 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
             })(document);
         </script>
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <style>
             .acurry_header {
@@ -37,13 +38,13 @@
             }
             @media screen and (min-width: 768px) {
                 .acurry_header {
-                    height: 147.5px;
+                    height: 140px;
                 }
                 .acurry_header-bg {
-                    height: 147.5px;
+                    height: 140px;
                 }
                 .acurry_footer {
-                    height: calc(100vh - 147.5px);
+                    height: calc(100vh - 140px);
                 }
             }
         </style>
@@ -55,11 +56,16 @@
         <div class="acurry_header">Header</div>
         <div class="acurry_header-bg"></div>
         <div class="acurry-fv">
-            <img src="./assets/img/fv.webp" alt="色鮮やかなチキンカレーと深みのあるビーフカレーが大きく映っている様子">
-            <h1>
+            <img src="./assets/img/fv.webp" alt="色鮮やかなチキンカレーと深みのあるビーフカレーが大きく映っている様子" class="acurry-sp">
+            <img src="./assets/img/responsive/fv.webp" alt="色鮮やかなチキンカレーと深みのあるビーフカレーが大きく映っている様子" class="acurry-pc">
+            <h1 class="acurry-sp">
                 <span><img src="./assets/img/h1-span-bg.webp" alt="">“有名店の味”をご自宅で</span>
                 本格<br>
                 レトルトカレー
+            </h1>
+            <h1 class="acurry-pc">
+                <span><img src="./assets/img/h1-span-bg.webp" alt="">“有名店の味”をご自宅で</span>
+                本格レトルトカレー
             </h1>
         </div>
         <main class="acurry_main">
@@ -67,7 +73,7 @@
                 <div>
                     <p>
                         <img src="./assets/img/epilogue.svg" alt="レトルトカレーのパッケージが重なりながら並んでいる様子">
-                        <span>
+                        <span class="acurry-sp">
                             忙しい日も、<br>
                             食卓をパッと華やかに。<br>
                             厳選した有名店の本格カレーなら、<br>
@@ -77,6 +83,13 @@
                             いつもの食卓をプロの味にする<br>
                             強い味方です。    
                         </span>
+                        <span class="acurry-pc">
+                            忙しい日も、食卓をパッと華やかに。<br>
+                            厳選した有名店の本格カレーなら、<br>
+                            有名店の味やシェフの逸品が温めるだけで目の前に。<br>
+                            深いコクと香りを驚くほど手軽に。<br>
+                            いつもの食卓をプロの味にする強い味方です。    
+                        </span>
                     </p>
                 </div>
             </section>
@@ -84,185 +97,250 @@
                 <article>
                     <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
                     <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
+                    <p class="acurry-catchcopy acurry-sp">
+                        ロケ弁当・楽屋弁当として<br>
                         人気の欧風カレー
                         <span><img src="./assets/img/treat-item.svg" alt=""></span>
                     </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
+                    <p class="acurry-catchcopy acurry-pc">
+                        ロケ弁当・楽屋弁当として人気の欧風カレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
+                            <img src="./assets/img/aubergine-mediumhot-pkg.webp" alt="オーベルジーヌ中辛口のパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                            <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                            <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                オーベルジーヌ<br>
+                                ビーフカレー 中辛口
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                </article>
+                <article>
+                    <img src="./assets/img/treat-bg4.webp" alt="" class="acurry-treat-bg4">
+                    <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
+                    <p class="acurry-catchcopy acurry-sp">
+                        ロケ弁当・楽屋弁当として<br>
+                        人気の欧風カレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <p class="acurry-catchcopy acurry-pc">
+                        ロケ弁当・楽屋弁当として人気の欧風カレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/aubergine-mild.webp" alt="オーベルジーヌ甘口">
+                            <img src="./assets/img/aubergine-mild-pkg.webp" alt="オーベルジーヌ甘口のパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                            <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                            <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                オーベルジーヌ<br>
+                                ビーフカレー 甘口
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
                 </article>
                 <article>
                     <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
                     <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
-                        人気の欧風カレー
+                    <p class="acurry-catchcopy acurry-sp">
+                        老舗果実専門店が作る<br>
+                        プレミアムビーフカレー
                         <span><img src="./assets/img/treat-item.svg" alt=""></span>
                     </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
+                    <p class="acurry-catchcopy acurry-pc">
+                        老舗果実専門店が作るプレミアムビーフカレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/ginzasenbikiya-beef.webp" alt="銀座千疋屋プレミアムビーフカレー">
+                            <img src="./assets/img/ginzasenbikiya-beef-pkg.webp" alt="銀座千疋屋プレミアムビーフカレーのパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                        <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                銀座千疋屋<br>
+                                プレミアムビーフカレー
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>702</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                </article>
+                <article>
+                    <img src="./assets/img/treat-bg4.webp" alt="" class="acurry-treat-bg4">
+                    <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
+                    <p class="acurry-catchcopy acurry-sp">
+                        老舗果実専門店が作る<br>
+                        プレミアムチキンカレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <p class="acurry-catchcopy acurry-pc">
+                        老舗果実専門店が作るプレミアムチキンカレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/ginzasenbikiya-chicken.webp" alt="銀座千疋屋プレミアムチキンカレー">
+                            <img src="./assets/img/ginzasenbikiya-chicken-pkg.webp" alt="銀座千疋屋プレミアムチキンカレーのパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                        <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                銀座千疋屋<br>
+                                プレミアムチキンカレー
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>702</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
                 </article>
                 <article>
                     <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
                     <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
-                        人気の欧風カレー
+                    <p class="acurry-catchcopy acurry-sp">
+                        大正時代から受け継がれる<br>
+                        老舗洋食店の本格欧風カレー
                         <span><img src="./assets/img/treat-item.svg" alt=""></span>
                     </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
+                    <p class="acurry-catchcopy acurry-pc">
+                        大正時代から受け継がれる老舗洋食店の本格欧風カレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/itogrill.webp" alt="伊藤グリル欧風ビーフカレー">
+                            <img src="./assets/img/itogrill-pkg.webp" alt="伊藤グリル欧風ビーフカレーのパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                        <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                伊藤グリル<br>
+                                欧風ビーフカレー
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>647</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                </article>
+                <article>
+                    <img src="./assets/img/treat-bg4.webp" alt="" class="acurry-treat-bg4">
+                    <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
+                    <p class="acurry-catchcopy acurry-sp">
+                        じっくり煮込んだ<br>
+                        老舗レストランの味
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <p class="acurry-catchcopy acurry-p"c>
+                        じっくり煮込んだ老舗レストランの味
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/matsumotoro.webp" alt="松本楼のハイカラビーフカレー">
+                            <img src="./assets/img/matsumotoro-pkg.webp" alt="松本楼のハイカラビーフカレーのパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                            <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                            <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                松本楼のハイカラ<br>
+                                ビーフカレー
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>897</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
                 </article>
                 <article>
                     <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
                     <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
-                        人気の欧風カレー
+                    <p class="acurry-catchcopy acurry-sp">
+                        国産牛肉を使った<br>
+                        伝統の味と技が織りなす正統派カレー
                         <span><img src="./assets/img/treat-item.svg" alt=""></span>
                     </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
-                    </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                    <p class="acurry-catchcopy acurry-pc">
+                        国産牛肉を使った伝統の味と技が織りなす正統派カレー
+                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
+                    </p>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/hotelnewgrand.webp" alt="ホテルニューグランドビーフカレー">
+                            <img src="./assets/img/hotelnewgrand-pkg.webp" alt="ホテルニューグランドビーフカレーのパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                            <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                            <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                ホテルニューグランド<br>
+                                ビーフカレー
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>864</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
                 </article>
                 <article>
-                    <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
+                    <img src="./assets/img/treat-bg4.webp" alt="" class="acurry-treat-bg4">
                     <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
-                        人気の欧風カレー
+                    <p class="acurry-catchcopy acurry-sp">
+                        老舗のこだわり<br>
+                        純欧風のコク
                         <span><img src="./assets/img/treat-item.svg" alt=""></span>
                     </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
-                    </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
-                    <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
-                        人気の欧風カレー
+                    <p class="acurry-catchcopy acurry-pc">
+                        老舗のこだわり、純欧風のコク
                         <span><img src="./assets/img/treat-item.svg" alt=""></span>
                     </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
-                    </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
-                    <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
-                        人気の欧風カレー
-                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
-                    </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
-                    </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
-                    </div>
-                </article>
-                <article>
-                    <img src="./assets/img/treat-bg2.webp" alt="" class="acurry-treat-bg2">
-                    <img src="./assets/img/treat-text.svg" alt="" class="acurry-treat-text">
-                    <p class="acurry-catchcopy">
-                        ロケ弁当・楽屋弁当として<br class="acurry-sp">
-                        人気の欧風カレー
-                        <span><img src="./assets/img/treat-item.svg" alt=""></span>
-                    </p>
-                    <div class="acurry-item-img">
-                        <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
-                        <img src="./assets/img/aubergine-mediumhot.webp" alt="オーベルジーヌ中辛口">
-                    </div>
-                    <div class="acurry-item-info">
-                        <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3">
-                        <h2>
-                            オーベルジーヌ<br>
-                            ビーフカレー 中辛口
-                        </h2>
-                        <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
-                        <p class="acurry-price">&yen;<span>1,080</span>(税込)</p>
-                        <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                    <div class="acurry-flex">
+                        <div class="acurry-item-img">
+                            <img src="./assets/img/treat-frame.svg" alt="" class="acurry-treat-frame">
+                            <img src="./assets/img/shinjukunakamuraya.webp" alt="新宿中村屋純欧風ビーフカリー クリーミーなコクの濃厚リッチ">
+                            <img src="./assets/img/shinjukunakamuraya-pkg.webp" alt="新宿中村屋純欧風ビーフカリー クリーミーなコクの濃厚リッチのパッケージ" class="acurry-item-pkg">
+                        </div>
+                        <div class="acurry-item-info">
+                            <img src="./assets/img/treat-bg3.webp" alt="" class="acurry-treat-bg3 acurry-sp">
+                            <img src="./assets/img/responsive/bg3.webp" alt="" class="acurry-treat-bg3 acurry-pc">
+                            <h2>
+                                新宿中村屋<br class="acurry-sp">
+                                純欧風ビーフカリー
+                                <span>〜クリーミーなコクの濃厚リッチ〜</span>
+                            </h2>
+                            <p>商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商品説明文商</p>
+                            <p class="acurry-price">&yen;<span>578</span>(税込)</p>
+                            <a href="" class="acutty-cta">このカレーの詳細を見る</a>
+                        </div>
                     </div>
                 </article>
             </section>

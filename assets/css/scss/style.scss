@@ -42,7 +42,7 @@ html {
         }
 
         main.acurry_main {
-            background-image: url(../img/bg1.webp);
+            background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg1.webp);
             padding-top: 50px;
 
             section.acurry-epilogue {
@@ -56,7 +56,8 @@ html {
                     z-index: 1;
 
                     img {
-                        width: 90vw;
+                        width: 95vw;
+                        max-width: initial;
                         height: fit-content;
                         @include absolute-center;
                         z-index: -1;
@@ -92,10 +93,9 @@ html {
 
                 article {
                     width: 100%;
-                    background-image: url(../img/bg2.webp);
                     position: relative;
 
-                    img.acurry-treat-bg2 {
+                    img.acurry-treat-bg2, img.acurry-treat-bg4 {
                         width: 60%;
                         position: absolute;
                         top: 1px;
@@ -109,7 +109,7 @@ html {
                         top: 7.5px;
                         left: 50%;
                         transform: translate(-50%, -100%);
-                        opacity: .75;
+                        opacity: .5;
                     }
 
                     p.acurry-catchcopy {
@@ -139,10 +139,21 @@ html {
                             height: 100%;
                             @include absolute-center;
                         }
+
+                        .acurry-item-pkg {
+                            width: auto;
+                            height: 31.5vw;
+                            box-shadow: 5px 5px 10px $black-a25;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            transform: translate(5px, 25px) rotate(5deg);
+                            z-index: 1;
+                        }
                     }
 
                     .acurry-item-info {
-                        background-image: url(../img/bg3.webp);
+                        background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg3.webp);
                         padding-bottom: 90px;
                         position: relative;
 
@@ -159,6 +170,12 @@ html {
                             @include font-ll;
                             letter-spacing: 0;
                             line-height: 145%;
+
+                            span {
+                                display: block;
+                                @include font-l;
+                                line-height: 185%;
+                            }
                         }
 
                         p {
@@ -199,6 +216,178 @@ html {
                                 height: calc(100% - 7.5px);
                                 border: solid .75px $white;
                                 @include absolute-center;
+                            }
+                        }
+                    }
+                }
+
+                article:nth-of-type(odd) {
+                    background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg2.webp);
+                }
+
+                article:nth-of-type(even) {
+                    background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg4.webp);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    html {
+
+        body {
+
+            .acurry-fv {
+                height: initial;
+
+                img {
+                    position: relative;
+                }
+
+                h1 {
+                    font-size: 105px;
+                    
+                    span {
+                        padding: 7.5px 25px;
+                        margin-bottom: 10px;
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            main.acurry_main {
+                background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg1.webp);
+                padding-top: 150px;
+
+                section.acurry-epilogue {
+
+                    p {
+                        padding: 25px 85px 25px 85px;
+
+                        img {
+                            width: 35vw;
+                            height: fit-content;
+                            @include absolute-center;
+                            z-index: -1;
+                        } 
+
+                        span {
+                            left: 8px;
+                        }
+                    }
+                }
+
+                section.acurry-items {
+                    margin-top: 200px;
+
+                    article {
+                        padding-bottom: 175px;
+
+                        img.acurry-treat-bg2, img.acurry-treat-bg4 {
+                            width: 25%;
+                        }
+
+                        img.acurry-treat-text {
+                            width: 22.5%;
+                            top: 12.5px;
+                        }
+
+                        p.acurry-catchcopy {
+                            padding-top: 100px;
+                            @include font-l-pc;
+
+                            span {
+                                width: 25%;
+                                margin: 25px auto 0 auto;
+                            }
+                        }
+
+                        .acurry-flex {
+                            margin-top: 50px;
+                            @include center;
+                            
+                            .acurry-item-img {
+                                width: 30%;
+                                height: 30vw;
+                                margin: 0 0 0 0;
+
+                                .acurry-item-pkg {
+                                    height: 12vw;
+                                    box-shadow: 7.5px 7.5px 7.5px $black-a25;
+                                    right: initial;
+                                    left: 0;
+                                    transform: translate(-35px, 35px) rotate(-5deg);
+                                }
+                            }
+
+                            .acurry-item-info {
+                                width: 40%;
+                                background-image: none;
+                                padding-bottom: 0;
+                                margin-left: 2.5vw;
+                                z-index: 1;
+
+                                img.acurry-treat-bg3 {
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    z-index: -1;
+                                }
+
+                                h2 {
+                                    padding: 35px 0 0 5vw;
+                                    @include font-ll-pc;
+
+                                    span {
+                                        @include font-l-pc;
+                                        color: $brown;
+                                    }
+                                }
+
+                                p {
+                                    width: calc(100% - 10vw);
+                                }
+
+                                .acurry-price {
+                                    margin: 0 auto 0 auto;
+
+                                    span {
+                                        @include font-ll-pc;
+                                        top: 6px;
+                                    }
+                                }
+
+                                .acutty-cta {
+                                    width: 16vw;
+                                    margin: 25px auto 0 auto;
+                                }
+                            }
+                        }
+                    }
+
+                    article:nth-of-type(odd) {
+                        background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg2.webp);
+                    }
+
+                    article:nth-of-type(even) {
+                        background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg4.webp);
+
+                        .acurry-flex {
+                            flex-direction: row-reverse;
+
+                            .acurry-item-img {
+                                margin-left: 2.5vw;
+
+                                .acurry-item-pkg {
+                                    right: 0;
+                                    left: initial;
+                                    transform: translate(35px, 35px) rotate(5deg);
+                                }
+                            }
+
+                            .acurry-item-info {
+                                margin-left: 0;
                             }
                         }
                     }

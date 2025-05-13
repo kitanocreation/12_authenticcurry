@@ -87,6 +87,10 @@ pre {
   line-height: 165%;
 }
 
+.acurry-pc {
+  display: none !important;
+}
+
 html, body {
   width: 100vw;
 }
@@ -102,8 +106,20 @@ a {
 
 img {
   width: 100%;
+  max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+  .acurry-sp {
+    display: none !important;
+  }
+  .acurry-pc {
+    display: block !important;
+  }
+}
 html body .acurry-fv {
   height: 100vw;
   position: relative;
@@ -141,7 +157,7 @@ html body .acurry-fv h1 span img {
   z-index: -1;
 }
 html body main.acurry_main {
-  background-image: url(../img/bg1.webp);
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg1.webp);
   padding-top: 50px;
 }
 html body main.acurry_main section.acurry-epilogue p {
@@ -153,7 +169,8 @@ html body main.acurry_main section.acurry-epilogue p {
   z-index: 1;
 }
 html body main.acurry_main section.acurry-epilogue p img {
-  width: 90vw;
+  width: 95vw;
+  max-width: initial;
   height: fit-content;
   position: absolute;
   top: 50%;
@@ -188,10 +205,9 @@ html body main.acurry_main section.acurry-items {
 }
 html body main.acurry_main section.acurry-items article {
   width: 100%;
-  background-image: url(../img/bg2.webp);
   position: relative;
 }
-html body main.acurry_main section.acurry-items article img.acurry-treat-bg2 {
+html body main.acurry_main section.acurry-items article img.acurry-treat-bg2, html body main.acurry_main section.acurry-items article img.acurry-treat-bg4 {
   width: 60%;
   position: absolute;
   top: 1px;
@@ -204,7 +220,7 @@ html body main.acurry_main section.acurry-items article img.acurry-treat-text {
   top: 7.5px;
   left: 50%;
   transform: translate(-50%, -100%);
-  opacity: 0.75;
+  opacity: 0.5;
 }
 html body main.acurry_main section.acurry-items article p.acurry-catchcopy {
   padding-top: 35px;
@@ -234,8 +250,18 @@ html body main.acurry_main section.acurry-items article .acurry-item-img .acurry
   left: 50%;
   transform: translate(-50%, -50%);
 }
+html body main.acurry_main section.acurry-items article .acurry-item-img .acurry-item-pkg {
+  width: auto;
+  height: 31.5vw;
+  box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.25);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(5px, 25px) rotate(5deg);
+  z-index: 1;
+}
 html body main.acurry_main section.acurry-items article .acurry-item-info {
-  background-image: url(../img/bg3.webp);
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg3.webp);
   padding-bottom: 90px;
   position: relative;
 }
@@ -251,6 +277,11 @@ html body main.acurry_main section.acurry-items article .acurry-item-info h2 {
   font-size: 24.5px;
   letter-spacing: 0;
   line-height: 145%;
+}
+html body main.acurry_main section.acurry-items article .acurry-item-info h2 span {
+  display: block;
+  font-size: 17.5px;
+  line-height: 185%;
 }
 html body main.acurry_main section.acurry-items article .acurry-item-info p {
   width: 91%;
@@ -292,4 +323,139 @@ html body main.acurry_main section.acurry-items article .acurry-item-info .acutt
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+html body main.acurry_main section.acurry-items article:nth-of-type(odd) {
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg2.webp);
+}
+html body main.acurry_main section.acurry-items article:nth-of-type(even) {
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg4.webp);
+}
+
+@media screen and (min-width: 768px) {
+  html body .acurry-fv {
+    height: initial;
+  }
+  html body .acurry-fv img {
+    position: relative;
+  }
+  html body .acurry-fv h1 {
+    font-size: 105px;
+  }
+  html body .acurry-fv h1 span {
+    padding: 7.5px 25px;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  html body main.acurry_main {
+    background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg1.webp);
+    padding-top: 150px;
+  }
+  html body main.acurry_main section.acurry-epilogue p {
+    padding: 25px 85px 25px 85px;
+  }
+  html body main.acurry_main section.acurry-epilogue p img {
+    width: 35vw;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  html body main.acurry_main section.acurry-epilogue p span {
+    left: 8px;
+  }
+  html body main.acurry_main section.acurry-items {
+    margin-top: 200px;
+  }
+  html body main.acurry_main section.acurry-items article {
+    padding-bottom: 175px;
+  }
+  html body main.acurry_main section.acurry-items article img.acurry-treat-bg2, html body main.acurry_main section.acurry-items article img.acurry-treat-bg4 {
+    width: 25%;
+  }
+  html body main.acurry_main section.acurry-items article img.acurry-treat-text {
+    width: 22.5%;
+    top: 12.5px;
+  }
+  html body main.acurry_main section.acurry-items article p.acurry-catchcopy {
+    padding-top: 100px;
+    font-size: 20px;
+  }
+  html body main.acurry_main section.acurry-items article p.acurry-catchcopy span {
+    width: 25%;
+    margin: 25px auto 0 auto;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-img {
+    width: 30%;
+    height: 30vw;
+    margin: 0 0 0 0;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-img .acurry-item-pkg {
+    height: 12vw;
+    box-shadow: 7.5px 7.5px 7.5px rgba(51, 51, 51, 0.25);
+    right: initial;
+    left: 0;
+    transform: translate(-35px, 35px) rotate(-5deg);
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info {
+    width: 40%;
+    background-image: none;
+    padding-bottom: 0;
+    margin-left: 2.5vw;
+    z-index: 1;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info img.acurry-treat-bg3 {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info h2 {
+    padding: 35px 0 0 5vw;
+    font-size: 28px;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info h2 span {
+    font-size: 20px;
+    color: #4A3B31;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info p {
+    width: calc(100% - 10vw);
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info .acurry-price {
+    margin: 0 auto 0 auto;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info .acurry-price span {
+    font-size: 28px;
+    top: 6px;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info .acutty-cta {
+    width: 16vw;
+    margin: 25px auto 0 auto;
+  }
+  html body main.acurry_main section.acurry-items article:nth-of-type(odd) {
+    background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg2.webp);
+  }
+  html body main.acurry_main section.acurry-items article:nth-of-type(even) {
+    background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg4.webp);
+  }
+  html body main.acurry_main section.acurry-items article:nth-of-type(even) .acurry-flex {
+    flex-direction: row-reverse;
+  }
+  html body main.acurry_main section.acurry-items article:nth-of-type(even) .acurry-flex .acurry-item-img {
+    margin-left: 2.5vw;
+  }
+  html body main.acurry_main section.acurry-items article:nth-of-type(even) .acurry-flex .acurry-item-img .acurry-item-pkg {
+    right: 0;
+    left: initial;
+    transform: translate(35px, 35px) rotate(5deg);
+  }
+  html body main.acurry_main section.acurry-items article:nth-of-type(even) .acurry-flex .acurry-item-info {
+    margin-left: 0;
+  }
 }

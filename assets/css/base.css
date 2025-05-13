@@ -87,6 +87,10 @@ pre {
   line-height: 165%;
 }
 
+.acurry-pc {
+  display: none !important;
+}
+
 html, body {
   width: 100vw;
 }
@@ -102,4 +106,17 @@ a {
 
 img {
   width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+  .acurry-sp {
+    display: none !important;
+  }
+  .acurry-pc {
+    display: block !important;
+  }
 }
