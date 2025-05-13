@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_11" data-name="レイヤー 11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 750">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4a3b31;
+        stroke: #4a3b31;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#_名称未設定グラデーション_158_コピー_3);
+      }
+    </style>
+    <linearGradient id="_名称未設定グラデーション_158_コピー_3" data-name="名称未設定グラデーション 158 コピー 3" x1="14.25" y1="375" x2="735.75" y2="375" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c69c6d"/>
+      <stop offset=".25" stop-color="#f7e8cf" stop-opacity=".9"/>
+      <stop offset=".27" stop-color="#f6ead1" stop-opacity=".92"/>
+      <stop offset=".34" stop-color="#f5f0d7" stop-opacity=".96"/>
+      <stop offset=".41" stop-color="#f5f3da" stop-opacity=".99"/>
+      <stop offset=".5" stop-color="beige"/>
+      <stop offset=".59" stop-color="#f5f3da" stop-opacity=".99"/>
+      <stop offset=".66" stop-color="#f5f0d7" stop-opacity=".96"/>
+      <stop offset=".73" stop-color="#f6e9d0" stop-opacity=".92"/>
+      <stop offset=".75" stop-color="#f7e7ce" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#c69c6d"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="M706.95,735.75H43.05v-.75c0-15.47-12.58-28.05-28.05-28.05h-.75V43.05h.75c15.47,0,28.05-12.58,28.05-28.05v-.75h663.9v.75c0,15.47,12.58,28.05,28.05,28.05h.75v663.9h-.75c-15.47,0-28.05,12.58-28.05,28.05v.75ZM44.54,734.25h660.92c.39-15.7,13.09-28.4,28.79-28.79V44.54c-15.7-.39-28.4-13.09-28.79-28.79H44.54c-.39,15.7-13.09,28.4-28.79,28.79v660.92c15.7.39,28.4,13.09,28.79,28.79Z"/>
+  <path class="cls-1" d="M713.16,742.5H36.84v-.76c0-15.76-12.82-28.57-28.57-28.57h-.76V36.84h.76c15.76,0,28.57-12.82,28.57-28.57v-.76h676.32v.76c0,15.76,12.82,28.57,28.57,28.57h.76v676.32h-.76c-15.76,0-28.57,12.82-28.57,28.57v.76ZM38.36,740.97h673.29c.4-15.99,13.34-28.93,29.33-29.33V38.36c-15.99-.4-28.93-13.34-29.33-29.33H38.36c-.4,15.99-13.34,28.93-29.33,29.33v673.29c15.99.4,28.93,13.34,29.33,29.33Z"/>
+</svg>
