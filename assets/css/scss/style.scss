@@ -45,7 +45,7 @@ html {
             background-image: url(../img/bg1.webp);
             padding-top: 50px;
 
-            .acurry-epilogue {
+            section.acurry-epilogue {
 
                 p {
                     width: fit-content;
@@ -58,10 +58,7 @@ html {
                     img {
                         width: 90vw;
                         height: fit-content;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
+                        @include absolute-center;
                         z-index: -1;
                     }    
 
@@ -86,6 +83,124 @@ html {
                         position: absolute;
                         top: 12.5px;
                         left: 12.5px;
+                    }
+                }
+            }
+
+            section.acurry-items {
+                margin-top: 90px;
+
+                article {
+                    width: 100%;
+                    background-image: url(../img/bg2.webp);
+                    position: relative;
+
+                    img.acurry-treat-bg2 {
+                        width: 60%;
+                        position: absolute;
+                        top: 1px;
+                        left: 50%;
+                        transform: translate(-50%, -100%);
+                    }
+
+                    img.acurry-treat-text {
+                        width: 52.5%;
+                        position: absolute;
+                        top: 7.5px;
+                        left: 50%;
+                        transform: translate(-50%, -100%);
+                        opacity: .75;
+                    }
+
+                    p.acurry-catchcopy {
+                        padding-top: 35px;
+                        @include font-l;
+                        color: $white;
+                        letter-spacing: .05em;
+                        text-align: center;
+
+                        span {
+                            display: block;
+                            width: 60%;
+                            height: fit-content;
+                            margin: 0 auto;
+                            line-height: 100%;
+                        }
+                    }
+
+                    .acurry-item-img {
+                        width: 90%;
+                        height: 90vw;
+                        margin: 35px auto 0 auto;
+                        position: relative;
+
+                        .acurry-treat-frame {
+                            width: 100%;
+                            height: 100%;
+                            @include absolute-center;
+                        }
+                    }
+
+                    .acurry-item-info {
+                        background-image: url(../img/bg3.webp);
+                        padding-bottom: 90px;
+                        position: relative;
+
+                        img.acurry-treat-bg3 {
+                            width: 100%;
+                            position: absolute;
+                            top: 1px;
+                            left: 0;
+                            transform: translateY(-100%);
+                        }
+
+                        h2 {
+                            padding: 25px 0 0 5vw;
+                            @include font-ll;
+                            letter-spacing: 0;
+                            line-height: 145%;
+                        }
+
+                        p {
+                            width: 91%;
+                            margin: 12.5px auto 0 auto;
+                        }
+
+                        .acurry-price {
+                            margin: 5px auto 0 auto;
+                            display: flex;
+                            justify-content: end;
+                            align-items: end;
+
+                            span {
+                                margin: 0 3.5px;
+                                font-family: $font3;
+                                @include font-ll;
+                                font-weight: 500;
+                                letter-spacing: 0;
+                                position: relative;
+                                top: 4px;
+                            }
+                        }
+
+                        .acutty-cta {
+                            width: 60%;
+                            height: 48px;
+                            background-color: $green;
+                            margin: 35px auto 0 auto;
+                            @include center;
+                            color: $white;
+                            letter-spacing: 0;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                width: calc(100% - 7.5px);
+                                height: calc(100% - 7.5px);
+                                border: solid .75px $white;
+                                @include absolute-center;
+                            }
+                        }
                     }
                 }
             }
