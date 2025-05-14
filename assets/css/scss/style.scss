@@ -117,6 +117,7 @@ html {
                         @include font-l;
                         color: $white;
                         letter-spacing: .05em;
+                        line-height: 165%;
                         text-align: center;
 
                         span {
@@ -184,7 +185,7 @@ html {
                         }
 
                         .acurry-price {
-                            margin: 5px auto 0 auto;
+                            margin: 22.5px auto 0 auto;
                             display: flex;
                             justify-content: end;
                             align-items: end;
@@ -196,7 +197,7 @@ html {
                                 font-weight: 500;
                                 letter-spacing: 0;
                                 position: relative;
-                                top: 4px;
+                                top: -4px;
                             }
                         }
 
@@ -229,6 +230,68 @@ html {
                     background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg4.webp);
                 }
             }
+
+            .acurry-recommend {
+                background-color: $white;
+                padding-top: 80px;
+
+                h2 {
+                    padding-left: 16px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $black;
+                }
+
+                ul {
+                    width: calc(100% - 32px);
+                    margin: 40px auto 0 auto;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: calc(50% - 8px);
+                        margin-top: 40px;
+
+                        a {
+                            display: block;
+                            color: $black;
+
+                            h3 {
+                                padding-top: 3px;
+                            }
+                        }
+                    }
+
+                    li:nth-of-type(even) {
+                        margin-left: 16px;
+                    }
+
+                    li:nth-of-type(1), li:nth-of-type(2) {
+                        margin-top: 0;
+                    }
+                }
+
+                .acurry-cta {
+                    display: block;
+                    width: 77.9vw;
+                    height: 48px;
+                    border-radius: 8px;
+                    background-color: $red;
+                    margin: 24px auto 0 auto;
+                    @include center;
+                    font-weight: 700;
+                    color: $white;
+
+                    &:active {
+                        box-shadow: 0 0 0 0 transparent;
+                        transform: translateY(2px)
+                    }           
+                }
+            }
+
+            .acurry-recommend:nth-last-of-type(1) {
+                padding: 100px 0;
+            }
         }
     }
 }
@@ -247,12 +310,17 @@ html {
                 }
 
                 h1 {
-                    font-size: 105px;
+                    font-size: 96px;
+                    text-align: center;
+                    top: 50%;
+                    bottom: initial;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     
                     span {
-                        padding: 7.5px 25px;
-                        margin-bottom: 10px;
-                        font-size: 28px;
+                        padding: 5px 12.5px;
+                        margin: 0 auto 12.5px auto;
+                        font-size: 24px;
                     }
                 }
             }
@@ -350,17 +418,22 @@ html {
                                 }
 
                                 .acurry-price {
-                                    margin: 0 auto 0 auto;
+                                    margin: 12.5px auto 0 auto;
 
                                     span {
                                         @include font-ll-pc;
-                                        top: 6px;
                                     }
                                 }
 
                                 .acutty-cta {
                                     width: 16vw;
                                     margin: 25px auto 0 auto;
+                                    transition-duration: .25s;
+
+                                    &:hover {
+                                        opacity: 1;
+                                        transform: scale(1.05);
+                                    }
                                 }
                             }
                         }
@@ -389,6 +462,46 @@ html {
                             .acurry-item-info {
                                 margin-left: 0;
                             }
+                        }
+                    }
+                }
+
+                .acurry-recommend {
+
+                    h2 {
+                        padding-left: 160px;
+                        font-size: 28px;
+                    }
+
+                    ul {
+                        width: calc(100% - 320px);
+
+                        li {
+                            width: calc((100% - (16px * 5)) / 6);
+                            margin: 0 0 0 16px;
+                        }
+
+                        li:nth-of-type(even) {
+                            margin-left: 16px;
+                        }
+    
+                        li:nth-of-type(1) {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .acurry-cta {
+                        width: 22.8vw;
+                    }
+                }
+
+                .acurry-lp {
+                    padding-top: 100px;
+
+                    ul {
+
+                        li {
+                            width: calc((100% - (16px * 3)) / 4);
                         }
                     }
                 }

@@ -227,6 +227,7 @@ html body main.acurry_main section.acurry-items article p.acurry-catchcopy {
   font-size: 17.5px;
   color: #FFFFFF;
   letter-spacing: 0.05em;
+  line-height: 165%;
   text-align: center;
 }
 html body main.acurry_main section.acurry-items article p.acurry-catchcopy span {
@@ -288,7 +289,7 @@ html body main.acurry_main section.acurry-items article .acurry-item-info p {
   margin: 12.5px auto 0 auto;
 }
 html body main.acurry_main section.acurry-items article .acurry-item-info .acurry-price {
-  margin: 5px auto 0 auto;
+  margin: 22.5px auto 0 auto;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -300,7 +301,7 @@ html body main.acurry_main section.acurry-items article .acurry-item-info .acurr
   font-weight: 500;
   letter-spacing: 0;
   position: relative;
-  top: 4px;
+  top: -4px;
 }
 html body main.acurry_main section.acurry-items article .acurry-item-info .acutty-cta {
   width: 60%;
@@ -330,6 +331,59 @@ html body main.acurry_main section.acurry-items article:nth-of-type(odd) {
 html body main.acurry_main section.acurry-items article:nth-of-type(even) {
   background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/bg4.webp);
 }
+html body main.acurry_main .acurry-recommend {
+  background-color: #FFFFFF;
+  padding-top: 80px;
+}
+html body main.acurry_main .acurry-recommend h2 {
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+html body main.acurry_main .acurry-recommend ul {
+  width: calc(100% - 32px);
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+html body main.acurry_main .acurry-recommend ul li {
+  width: calc(50% - 8px);
+  margin-top: 40px;
+}
+html body main.acurry_main .acurry-recommend ul li a {
+  display: block;
+  color: #333333;
+}
+html body main.acurry_main .acurry-recommend ul li a h3 {
+  padding-top: 3px;
+}
+html body main.acurry_main .acurry-recommend ul li:nth-of-type(even) {
+  margin-left: 16px;
+}
+html body main.acurry_main .acurry-recommend ul li:nth-of-type(1), html body main.acurry_main .acurry-recommend ul li:nth-of-type(2) {
+  margin-top: 0;
+}
+html body main.acurry_main .acurry-recommend .acurry-cta {
+  display: block;
+  width: 77.9vw;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #B8193F;
+  margin: 24px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+html body main.acurry_main .acurry-recommend .acurry-cta:active {
+  box-shadow: 0 0 0 0 transparent;
+  transform: translateY(2px);
+}
+html body main.acurry_main .acurry-recommend:nth-last-of-type(1) {
+  padding: 100px 0;
+}
 
 @media screen and (min-width: 768px) {
   html body .acurry-fv {
@@ -339,12 +393,17 @@ html body main.acurry_main section.acurry-items article:nth-of-type(even) {
     position: relative;
   }
   html body .acurry-fv h1 {
-    font-size: 105px;
+    font-size: 96px;
+    text-align: center;
+    top: 50%;
+    bottom: initial;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   html body .acurry-fv h1 span {
-    padding: 7.5px 25px;
-    margin-bottom: 10px;
-    font-size: 28px;
+    padding: 5px 12.5px;
+    margin: 0 auto 12.5px auto;
+    font-size: 24px;
   }
   html body main.acurry_main {
     background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg1.webp);
@@ -428,15 +487,19 @@ html body main.acurry_main section.acurry-items article:nth-of-type(even) {
     width: calc(100% - 10vw);
   }
   html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info .acurry-price {
-    margin: 0 auto 0 auto;
+    margin: 12.5px auto 0 auto;
   }
   html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info .acurry-price span {
     font-size: 28px;
-    top: 6px;
   }
   html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info .acutty-cta {
     width: 16vw;
     margin: 25px auto 0 auto;
+    transition-duration: 0.25s;
+  }
+  html body main.acurry_main section.acurry-items article .acurry-flex .acurry-item-info .acutty-cta:hover {
+    opacity: 1;
+    transform: scale(1.05);
   }
   html body main.acurry_main section.acurry-items article:nth-of-type(odd) {
     background-image: url(https://gigaplus.makeshop.jp/kitanoace/18_authenticcurry/assets/img/responsive/bg2.webp);
@@ -457,5 +520,31 @@ html body main.acurry_main section.acurry-items article:nth-of-type(even) {
   }
   html body main.acurry_main section.acurry-items article:nth-of-type(even) .acurry-flex .acurry-item-info {
     margin-left: 0;
+  }
+  html body main.acurry_main .acurry-recommend h2 {
+    padding-left: 160px;
+    font-size: 28px;
+  }
+  html body main.acurry_main .acurry-recommend ul {
+    width: calc(100% - 320px);
+  }
+  html body main.acurry_main .acurry-recommend ul li {
+    width: calc((100% - 80px) / 6);
+    margin: 0 0 0 16px;
+  }
+  html body main.acurry_main .acurry-recommend ul li:nth-of-type(even) {
+    margin-left: 16px;
+  }
+  html body main.acurry_main .acurry-recommend ul li:nth-of-type(1) {
+    margin-left: 0;
+  }
+  html body main.acurry_main .acurry-recommend .acurry-cta {
+    width: 22.8vw;
+  }
+  html body main.acurry_main .acurry-lp {
+    padding-top: 100px;
+  }
+  html body main.acurry_main .acurry-lp ul li {
+    width: calc((100% - 48px) / 4);
   }
 }
