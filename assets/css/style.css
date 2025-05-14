@@ -206,18 +206,19 @@ html body main.acurry_main section.acurry-items {
 html body main.acurry_main section.acurry-items article {
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 html body main.acurry_main section.acurry-items article img.acurry-treat-bg2, html body main.acurry_main section.acurry-items article img.acurry-treat-bg4 {
-  width: 60%;
   position: absolute;
-  top: 1px;
-  left: 50%;
-  transform: translate(-50%, -100%);
+  top: 0;
+  left: 0;
+  transform: translateY(-35px);
+  z-index: -1;
 }
 html body main.acurry_main section.acurry-items article img.acurry-treat-text {
-  width: 52.5%;
+  width: 47.5%;
   position: absolute;
-  top: 7.5px;
+  top: 8.5px;
   left: 50%;
   transform: translate(-50%, -100%);
   opacity: 0.5;
@@ -269,15 +270,17 @@ html body main.acurry_main section.acurry-items article .acurry-item-info {
 html body main.acurry_main section.acurry-items article .acurry-item-info img.acurry-treat-bg3 {
   width: 100%;
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 0;
-  transform: translateY(-100%);
+  transform: translateY(-25px);
+  z-index: 0;
 }
 html body main.acurry_main section.acurry-items article .acurry-item-info h2 {
   padding: 25px 0 0 5vw;
   font-size: 24.5px;
   letter-spacing: 0;
   line-height: 145%;
+  position: relative;
 }
 html body main.acurry_main section.acurry-items article .acurry-item-info h2 span {
   display: block;
@@ -287,6 +290,7 @@ html body main.acurry_main section.acurry-items article .acurry-item-info h2 spa
 html body main.acurry_main section.acurry-items article .acurry-item-info p {
   width: 91%;
   margin: 12.5px auto 0 auto;
+  position: relative;
 }
 html body main.acurry_main section.acurry-items article .acurry-item-info .acurry-price {
   margin: 22.5px auto 0 auto;
@@ -431,15 +435,17 @@ html body main.acurry_main .acurry-recommend:nth-last-of-type(1) {
     padding-bottom: 175px;
   }
   html body main.acurry_main section.acurry-items article img.acurry-treat-bg2, html body main.acurry_main section.acurry-items article img.acurry-treat-bg4 {
-    width: 25%;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, -32.5px);
   }
   html body main.acurry_main section.acurry-items article img.acurry-treat-text {
-    width: 22.5%;
-    top: 12.5px;
+    width: 20%;
+    top: 35px;
   }
   html body main.acurry_main section.acurry-items article p.acurry-catchcopy {
     padding-top: 100px;
-    font-size: 20px;
+    font-size: 28px;
   }
   html body main.acurry_main section.acurry-items article p.acurry-catchcopy span {
     width: 25%;
